@@ -1,0 +1,25 @@
+01 + blockhash
+01 + blockhash + 01 + blockhash (nextblock)
+01 + blockhash + 02 + txindex + txoutindex + txref
+
+01 + blockhash + 01 => blockhash[]
+01 + blockhash + 02 + txindex => (txoutindex + txref)[] <<
+01 + blockhash + 02 => (txindex + txoutindex + txref)[]
+
+02 + txhash
+02 + txhash + 01 + blockhash + txindex (blocks containing this transaction)
+02 + txhash + 02 + txoutindex + txref
+
+02 + txhash + 01 => (blockhash + txindex)[]
+02 + txhash + 02 => (txoutindex + txref)[]
+
+03 + address (later: hash160, public key?)
+03 + address + (01 +) blockhash + txhash (address operation)
+
+add txhash 02 txref => need to reflect this change to all blocks
+block add txhash => need to reflect txhash 02 txref changes
+
+tx: stored as part of blockhash, and also stored separately
+=> if tx added to a block, need to update outputs of that block
+
+one block:

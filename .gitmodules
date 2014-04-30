@@ -1,0 +1,9 @@
+[submodule "leveldb"]
+	path = leveldb
+	url = https://github.com/bkchain/leveldb.git
+[submodule "json-rpc-cpp"]
+	path = json-rpc-cpp
+	url = https://github.com/bkchain/libjson-rpc-cpp.git
+[submodule "websocketpp"]
+	path = websocketpp
+	url = https://github.com/zaphoyd/websocketpp.git

@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9F09CC1A-5D66-473E-8523-8F7F6405EFDA}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\websocketpp;..\leveldb\include;..\leveldb;..\boost_1_55_0;.</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);LEVELDB_PLATFORM_WINDOWS;OS_WIN;WIN32;_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\boost_1_55_0\stage\lib</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\websocketpp;..\leveldb\include;..\leveldb;..\boost_1_55_0;.</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);LEVELDB_PLATFORM_WINDOWS;OS_WIN;WIN32;_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\boost_1_55_0\stage\lib</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\websocketpp;..\leveldb\include;..\leveldb;..\boost_1_55_0;.</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);LEVELDB_PLATFORM_WINDOWS;OS_WIN;WIN32;NDEBUG</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\boost_1_55_0\stage\lib</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\websocketpp;..\leveldb\include;..\leveldb;..\boost_1_55_0;.</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);LEVELDB_PLATFORM_WINDOWS;OS_WIN;WIN32;NDEBUG</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\boost_1_55_0\stage\lib</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\blockchain\Base58.cpp" />
+    <ClCompile Include="..\blockchain\BitcoinAddress.cpp" />
+    <ClCompile Include="..\blockchain\BitcoinScript.cpp" />
+    <ClCompile Include="..\blockchain\BitcoinTransactions.cpp" />
+    <ClCompile Include="..\blockchain\BlockChain.cpp" />
+    <ClCompile Include="..\blockchain\RIPEMD160.cpp" />
+    <ClCompile Include="..\blockchain\SHA256.cpp" />
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\client.cpp" />
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\clientconnector.cpp" />
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\connectors\httpserver.cpp" />
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\connectors\mongoose.c" />
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\errors.cpp" />
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\exception.cpp" />
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\json\json_reader.cpp" />
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\json\json_value.cpp" />
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\json\json_writer.cpp" />
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\procedure.cpp" />
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\rpcprotocolclient.cpp" />
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\rpcprotocolserver.cpp" />
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\server.cpp" />
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\serverconnector.cpp" />
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\specificationparser.cpp" />
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\specificationwriter.cpp" />
+    <ClCompile Include="..\leveldb\db\builder.cc" />
+    <ClCompile Include="..\leveldb\db\c.cc" />
+    <ClCompile Include="..\leveldb\db\dbformat.cc" />
+    <ClCompile Include="..\leveldb\db\db_impl.cc" />
+    <ClCompile Include="..\leveldb\db\db_iter.cc" />
+    <ClCompile Include="..\leveldb\db\filename.cc" />
+    <ClCompile Include="..\leveldb\db\log_reader.cc" />
+    <ClCompile Include="..\leveldb\db\log_writer.cc" />
+    <ClCompile Include="..\leveldb\db\memtable.cc" />
+    <ClCompile Include="..\leveldb\db\repair.cc" />
+    <ClCompile Include="..\leveldb\db\table_cache.cc" />
+    <ClCompile Include="..\leveldb\db\version_edit.cc" />
+    <ClCompile Include="..\leveldb\db\version_set.cc" />
+    <ClCompile Include="..\leveldb\db\write_batch.cc" />
+    <ClCompile Include="..\leveldb\helpers\memenv\memenv.cc" />
+    <ClCompile Include="..\leveldb\port\env_boost.cc" />
+    <ClCompile Include="..\leveldb\port\port_win.cc" />
+    <ClCompile Include="..\leveldb\port\win_logger.cc" />
+    <ClCompile Include="..\leveldb\table\block.cc" />
+    <ClCompile Include="..\leveldb\table\block_builder.cc" />
+    <ClCompile Include="..\leveldb\table\filter_block.cc" />
+    <ClCompile Include="..\leveldb\table\format.cc" />
+    <ClCompile Include="..\leveldb\table\iterator.cc" />
+    <ClCompile Include="..\leveldb\table\merger.cc" />
+    <ClCompile Include="..\leveldb\table\table.cc" />
+    <ClCompile Include="..\leveldb\table\table_builder.cc" />
+    <ClCompile Include="..\leveldb\table\two_level_iterator.cc" />
+    <ClCompile Include="..\leveldb\util\arena.cc" />
+    <ClCompile Include="..\leveldb\util\bloom.cc" />
+    <ClCompile Include="..\leveldb\util\cache.cc" />
+    <ClCompile Include="..\leveldb\util\coding.cc" />
+    <ClCompile Include="..\leveldb\util\comparator.cc" />
+    <ClCompile Include="..\leveldb\util\crc32c.cc" />
+    <ClCompile Include="..\leveldb\util\env.cc" />
+    <ClCompile Include="..\leveldb\util\filter_policy.cc" />
+    <ClCompile Include="..\leveldb\util\hash.cc" />
+    <ClCompile Include="..\leveldb\util\histogram.cc" />
+    <ClCompile Include="..\leveldb\util\logging.cc" />
+    <ClCompile Include="..\leveldb\util\options.cc" />
+    <ClCompile Include="..\leveldb\util\status.cc" />
+    <ClCompile Include="..\leveldb\util\testharness.cc" />
+    <ClCompile Include="..\leveldb\util\testutil.cc" />
+    <ClCompile Include="BitcoinLiveTX.cpp" />
+    <ClCompile Include="BitcoinRPC.cpp" />
+    <ClCompile Include="BitcoinTX.cpp" />
+    <ClCompile Include="BroadcastWebsocketServer.hpp" />
+    <ClCompile Include="httpclientasio.cpp" />
+    <ClCompile Include="AddressOperations.cpp" />
+    <ClCompile Include="Blocks.cpp" />
+    <ClCompile Include="CacherServer.cpp" />
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="llvm\Support\SmallVector.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ScriptDecoder.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\blockchain\Base58.h" />
+    <ClInclude Include="..\blockchain\BitcoinAddress.h" />
+    <ClInclude Include="..\blockchain\BitcoinScript.h" />
+    <ClInclude Include="..\blockchain\BitcoinTransactions.h" />
+    <ClInclude Include="..\blockchain\BlockChain.h" />
+    <ClInclude Include="..\blockchain\RIPEMD160.h" />
+    <ClInclude Include="..\blockchain\SHA256.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\abstractauthenticator.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\abstractrequesthandler.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\client.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\clientconnector.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\connectors\httpserver.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\connectors\mongoose.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\errors.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\exception.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\autolink.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\config.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\features.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\forwards.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\json.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\json_batchallocator.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\reader.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\value.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\writer.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\procedure.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\rpc.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\rpcprotocolclient.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\rpcprotocolserver.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\server.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\serverconnector.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\specification.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\specificationparser.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\specificationwriter.h" />
+    <ClInclude Include="..\leveldb\db\builder.h" />
+    <ClInclude Include="..\leveldb\db\dbformat.h" />
+    <ClInclude Include="..\leveldb\db\db_impl.h" />
+    <ClInclude Include="..\leveldb\db\db_iter.h" />
+    <ClInclude Include="..\leveldb\db\filename.h" />
+    <ClInclude Include="..\leveldb\db\log_format.h" />
+    <ClInclude Include="..\leveldb\db\log_reader.h" />
+    <ClInclude Include="..\leveldb\db\log_writer.h" />
+    <ClInclude Include="..\leveldb\db\memtable.h" />
+    <ClInclude Include="..\leveldb\db\skiplist.h" />
+    <ClInclude Include="..\leveldb\db\snapshot.h" />
+    <ClInclude Include="..\leveldb\db\table_cache.h" />
+    <ClInclude Include="..\leveldb\db\version_edit.h" />
+    <ClInclude Include="..\leveldb\db\version_set.h" />
+    <ClInclude Include="..\leveldb\db\write_batch_internal.h" />
+    <ClInclude Include="..\leveldb\helpers\memenv\memenv.h" />
+    <ClInclude Include="..\leveldb\include\leveldb\c.h" />
+    <ClInclude Include="..\leveldb\include\leveldb\cache.h" />
+    <ClInclude Include="..\leveldb\include\leveldb\comparator.h" />
+    <ClInclude Include="..\leveldb\include\leveldb\db.h" />
+    <ClInclude Include="..\leveldb\include\leveldb\env.h" />
+    <ClInclude Include="..\leveldb\include\leveldb\filter_policy.h" />
+    <ClInclude Include="..\leveldb\include\leveldb\iterator.h" />
+    <ClInclude Include="..\leveldb\include\leveldb\options.h" />
+    <ClInclude Include="..\leveldb\include\leveldb\slice.h" />
+    <ClInclude Include="..\leveldb\include\leveldb\status.h" />
+    <ClInclude Include="..\leveldb\include\leveldb\table.h" />
+    <ClInclude Include="..\leveldb\include\leveldb\table_builder.h" />
+    <ClInclude Include="..\leveldb\include\leveldb\write_batch.h" />
+    <ClInclude Include="..\leveldb\port\atomic_pointer.h" />
+    <ClInclude Include="..\leveldb\port\port.h" />
+    <ClInclude Include="..\leveldb\port\port_example.h" />
+    <ClInclude Include="..\leveldb\port\port_posix.h" />
+    <ClInclude Include="..\leveldb\port\port_win.h" />
+    <ClInclude Include="..\leveldb\port\thread_annotations.h" />
+    <ClInclude Include="..\leveldb\port\win\stdint.h" />
+    <ClInclude Include="..\leveldb\table\block.h" />
+    <ClInclude Include="..\leveldb\table\block_builder.h" />
+    <ClInclude Include="..\leveldb\table\filter_block.h" />
+    <ClInclude Include="..\leveldb\table\format.h" />
+    <ClInclude Include="..\leveldb\table\iterator_wrapper.h" />
+    <ClInclude Include="..\leveldb\table\merger.h" />
+    <ClInclude Include="..\leveldb\table\two_level_iterator.h" />
+    <ClInclude Include="..\leveldb\util\arena.h" />
+    <ClInclude Include="..\leveldb\util\coding.h" />
+    <ClInclude Include="..\leveldb\util\crc32c.h" />
+    <ClInclude Include="..\leveldb\util\hash.h" />
+    <ClInclude Include="..\leveldb\util\histogram.h" />
+    <ClInclude Include="..\leveldb\util\logging.h" />
+    <ClInclude Include="..\leveldb\util\mutexlock.h" />
+    <ClInclude Include="..\leveldb\util\posix_logger.h" />
+    <ClInclude Include="..\leveldb\util\random.h" />
+    <ClInclude Include="..\leveldb\util\testharness.h" />
+    <ClInclude Include="..\leveldb\util\testutil.h" />
+    <ClInclude Include="..\leveldb\util\win_logger.h" />
+    <ClInclude Include="abstractcacherserver.h" />
+    <ClInclude Include="Address.h" />
+    <ClInclude Include="AddressOperations.h" />
+    <ClInclude Include="BitcoinRPC.h" />
+    <ClInclude Include="BitcoinTX.h" />
+    <ClInclude Include="Blocks.h" />
+    <ClInclude Include="CacherServer.h" />
+    <ClInclude Include="BitcoinLiveTX.h" />
+    <ClInclude Include="Hash256.h" />
+    <ClInclude Include="httpclientasio.h" />
+    <ClInclude Include="llvm_serialization.h" />
+    <ClInclude Include="lrucache.hpp" />
+    <ClInclude Include="ScriptDecoder.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="Serialization.h" />
+    <ClInclude Include="varint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\json-rpc-cpp\src\jsonrpc\json\json_internalarray.inl" />
+    <None Include="..\json-rpc-cpp\src\jsonrpc\json\json_internalmap.inl" />
+    <None Include="..\json-rpc-cpp\src\jsonrpc\json\json_valueiterator.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

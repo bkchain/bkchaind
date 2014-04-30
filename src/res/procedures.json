@@ -1,0 +1,50 @@
+[
+	{
+		"method": "getaddress",
+		"isNotification": false,
+		"params": {
+			"address": ""
+		}
+	},
+	{
+		"method": "getblock",
+		"isNotification": false,
+		"params": {
+			"hash": ""
+		}
+	},
+	{
+		"method": "getblockhash",
+		"isNotification": false,
+		"params": {
+			"height": 0
+		}
+	},
+	{
+		"method": "getblockheight",
+		"isNotification": false,
+		"params": {
+			"height": 0
+		}
+	},
+	{
+		"method": "getblocks",
+		"isNotification": false,
+		"params": {
+			"page": 0
+		}
+	},
+	{
+		"method": "getlatesttransactions",
+		"isNotification": false,
+		"params": {
+		}
+	},
+	{
+		"method": "getrawtx",
+		"isNotification": false,
+		"params": {
+			"hash": ""
+		}
+	}
+]

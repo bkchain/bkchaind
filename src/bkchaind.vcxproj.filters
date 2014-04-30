@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="llvm\Support\SmallVector.cpp">
+      <Filter>llvm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\client.cpp">
+      <Filter>json-rpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\clientconnector.cpp">
+      <Filter>json-rpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\errors.cpp">
+      <Filter>json-rpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\exception.cpp">
+      <Filter>json-rpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\procedure.cpp">
+      <Filter>json-rpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\rpcprotocolclient.cpp">
+      <Filter>json-rpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\rpcprotocolserver.cpp">
+      <Filter>json-rpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\server.cpp">
+      <Filter>json-rpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\serverconnector.cpp">
+      <Filter>json-rpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\specificationparser.cpp">
+      <Filter>json-rpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\specificationwriter.cpp">
+      <Filter>json-rpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\connectors\httpserver.cpp">
+      <Filter>json-rpc-cpp\connectors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\connectors\mongoose.c">
+      <Filter>json-rpc-cpp\connectors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\json\json_reader.cpp">
+      <Filter>json-rpc-cpp\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\json\json_value.cpp">
+      <Filter>json-rpc-cpp\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\json-rpc-cpp\src\jsonrpc\json\json_writer.cpp">
+      <Filter>json-rpc-cpp\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\db\builder.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\db\c.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\db\dbformat.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\db\db_impl.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\db\db_iter.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\db\filename.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\db\log_reader.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\db\log_writer.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\db\memtable.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\db\repair.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\db\table_cache.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\db\version_edit.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\db\version_set.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\db\write_batch.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\helpers\memenv\memenv.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\port\port_win.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\table\block.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\table\block_builder.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\table\filter_block.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\table\format.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\table\iterator.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\table\merger.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\table\table.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\table\table_builder.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\table\two_level_iterator.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\util\arena.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\util\bloom.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\util\cache.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\util\coding.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\util\comparator.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\util\crc32c.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\util\env.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\util\filter_policy.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\util\hash.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\util\histogram.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\util\logging.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\util\options.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\util\status.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\util\testharness.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\util\testutil.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blockchain\Base58.cpp">
+      <Filter>blockchain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blockchain\BitcoinAddress.cpp">
+      <Filter>blockchain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blockchain\BitcoinScript.cpp">
+      <Filter>blockchain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blockchain\BitcoinTransactions.cpp">
+      <Filter>blockchain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blockchain\BlockChain.cpp">
+      <Filter>blockchain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blockchain\RIPEMD160.cpp">
+      <Filter>blockchain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blockchain\SHA256.cpp">
+      <Filter>blockchain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\port\env_boost.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\leveldb\port\win_logger.cc">
+      <Filter>leveldb\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="httpclientasio.cpp" />
+    <ClInclude Include="httpclientasio.h" />
+    <ClCompile Include="CacherServer.cpp" />
+    <ClCompile Include="AddressOperations.cpp" />
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="Blocks.cpp" />
+    <ClCompile Include="BitcoinRPC.cpp" />
+    <ClCompile Include="BitcoinLiveTX.cpp" />
+    <ClCompile Include="BroadcastWebsocketServer.hpp" />
+    <ClCompile Include="BitcoinTX.cpp" />
+    <ClCompile Include="ScriptDecoder.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="llvm">
+      <UniqueIdentifier>{15d8da67-f5c6-46de-bf87-9d8d41581148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json-rpc-cpp">
+      <UniqueIdentifier>{0c2da2ef-17ed-4178-a0f5-ffd5f1f45285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json-rpc-cpp\connectors">
+      <UniqueIdentifier>{5b136772-d1d0-4e8d-8885-7322f40ac400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json-rpc-cpp\json">
+      <UniqueIdentifier>{69266fe5-af4d-4674-bb98-eeefd7755099}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="blockchain">
+      <UniqueIdentifier>{564d12e4-7020-449e-ae01-3f5faa251660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="leveldb">
+      <UniqueIdentifier>{f1211966-1087-43cd-b360-917feeae693d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="leveldb\Source Files">
+      <UniqueIdentifier>{23cec805-3b80-4f04-a1a4-0c020101470b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="leveldb\Header Files">
+      <UniqueIdentifier>{0a1f48f8-d9d7-4f39-8131-ce337c13d7e2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="llvm_serialization.h" />
+    <ClInclude Include="Hash256.h" />
+    <ClInclude Include="Address.h" />
+    <ClInclude Include="ScriptDecoder.h" />
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\abstractauthenticator.h">
+      <Filter>json-rpc-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\abstractrequesthandler.h">
+      <Filter>json-rpc-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\client.h">
+      <Filter>json-rpc-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\clientconnector.h">
+      <Filter>json-rpc-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\errors.h">
+      <Filter>json-rpc-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\exception.h">
+      <Filter>json-rpc-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\procedure.h">
+      <Filter>json-rpc-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\rpc.h">
+      <Filter>json-rpc-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\rpcprotocolclient.h">
+      <Filter>json-rpc-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\rpcprotocolserver.h">
+      <Filter>json-rpc-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\server.h">
+      <Filter>json-rpc-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\serverconnector.h">
+      <Filter>json-rpc-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\specification.h">
+      <Filter>json-rpc-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\specificationparser.h">
+      <Filter>json-rpc-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\specificationwriter.h">
+      <Filter>json-rpc-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\connectors\httpserver.h">
+      <Filter>json-rpc-cpp\connectors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\connectors\mongoose.h">
+      <Filter>json-rpc-cpp\connectors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\autolink.h">
+      <Filter>json-rpc-cpp\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\config.h">
+      <Filter>json-rpc-cpp\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\features.h">
+      <Filter>json-rpc-cpp\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\forwards.h">
+      <Filter>json-rpc-cpp\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\json.h">
+      <Filter>json-rpc-cpp\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\json_batchallocator.h">
+      <Filter>json-rpc-cpp\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\reader.h">
+      <Filter>json-rpc-cpp\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\value.h">
+      <Filter>json-rpc-cpp\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\json-rpc-cpp\src\jsonrpc\json\writer.h">
+      <Filter>json-rpc-cpp\json</Filter>
+    </ClInclude>
+    <ClInclude Include="abstractcacherserver.h" />
+    <ClInclude Include="..\leveldb\db\builder.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\db\dbformat.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\db\db_impl.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\db\db_iter.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\db\filename.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\db\log_format.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\db\log_reader.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\db\log_writer.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\db\memtable.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\db\skiplist.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\db\snapshot.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\db\table_cache.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\db\version_edit.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\db\version_set.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\db\write_batch_internal.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\helpers\memenv\memenv.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\include\leveldb\c.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\include\leveldb\cache.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\include\leveldb\comparator.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\include\leveldb\db.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\include\leveldb\env.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\include\leveldb\filter_policy.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\include\leveldb\iterator.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\include\leveldb\options.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\include\leveldb\slice.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\include\leveldb\status.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\include\leveldb\table.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\include\leveldb\table_builder.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\include\leveldb\write_batch.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\port\atomic_pointer.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\port\port.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\port\port_example.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\port\port_posix.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\port\port_win.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\port\thread_annotations.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\port\win\stdint.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\table\block.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\table\block_builder.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\table\filter_block.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\table\format.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\table\iterator_wrapper.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\table\merger.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\table\two_level_iterator.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\util\arena.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\util\coding.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\util\crc32c.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\util\hash.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\util\histogram.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\util\logging.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\util\mutexlock.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\util\posix_logger.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\util\random.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\util\testharness.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\util\testutil.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\leveldb\util\win_logger.h">
+      <Filter>leveldb\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blockchain\Base58.h">
+      <Filter>blockchain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blockchain\BitcoinAddress.h">
+      <Filter>blockchain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blockchain\BitcoinScript.h">
+      <Filter>blockchain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blockchain\BitcoinTransactions.h">
+      <Filter>blockchain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blockchain\BlockChain.h">
+      <Filter>blockchain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blockchain\RIPEMD160.h">
+      <Filter>blockchain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blockchain\SHA256.h">
+      <Filter>blockchain</Filter>
+    </ClInclude>
+    <ClInclude Include="lrucache.hpp" />
+    <ClInclude Include="varint.h" />
+    <ClInclude Include="CacherServer.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="Serialization.h" />
+    <ClInclude Include="Blocks.h" />
+    <ClInclude Include="AddressOperations.h" />
+    <ClInclude Include="BitcoinRPC.h" />
+    <ClInclude Include="BitcoinLiveTX.h" />
+    <ClInclude Include="BitcoinTX.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\json-rpc-cpp\src\jsonrpc\json\json_internalarray.inl">
+      <Filter>json-rpc-cpp\json</Filter>
+    </None>
+    <None Include="..\json-rpc-cpp\src\jsonrpc\json\json_internalmap.inl">
+      <Filter>json-rpc-cpp\json</Filter>
+    </None>
+    <None Include="..\json-rpc-cpp\src\jsonrpc\json\json_valueiterator.inl">
+      <Filter>json-rpc-cpp\json</Filter>
+    </None>
+  </ItemGroup>
+</Project>

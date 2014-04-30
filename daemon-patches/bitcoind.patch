@@ -1,0 +1,27 @@
+diff --git a/src/main.h b/src/main.h
+index 6665e5a..77a4366 100644
+--- a/src/main.h
++++ b/src/main.h
+@@ -1428,6 +1428,13 @@ public:
+         if (!fileout)
+             return error("CBlock::WriteToDisk() : OpenBlockFile failed");
+
++        struct flock lock;
++        lock.l_type    = F_WRLCK;
++        lock.l_start   = 0;
++        lock.l_whence  = SEEK_CUR;
++        lock.l_len     = 0;
++        fcntl(fileno(fileout), F_SETLK, &lock);
++
+         // Write index header
+         unsigned int nSize = fileout.GetSerializeSize(*this);
+         fileout << FLATDATA(pchMessageStart) << nSize;
+@@ -1444,6 +1451,9 @@ public:
+         if (!IsInitialBlockDownload())
+             FileCommit(fileout);
+
++        lock.l_type = F_UNLCK;
++        fcntl(fileno(fileout), F_SETLK, &lock);
++
+         return true;
+     }

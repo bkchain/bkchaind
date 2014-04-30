@@ -1,0 +1,16 @@
+*.suo
+*.sdf
+*.opensdf
+*.user
+obj/
+bin/
+.svn/
+boost_1_55_0/
+Debug/
+Release/
+/BitcoinCacher2/btc*/
+/BitcoinCacher2/ltc*/
+/BitcoinCacher2/ppc*/
+/BitcoinCacher2/doge*/
+/packages/
+/blockchain/compiler/
