@@ -1,6 +1,7 @@
 # bkchaind
 
-Blockchain explorer daemon
+Blockchain explorer daemon.
+http://bkchain.org
 
 ## Features
 * JSON API: block and tx info, address balance, operations and unspent outputs
@@ -33,3 +34,11 @@ Most of them are included:
 * json-rpc-cpp (submodule)
 * leveldb (submodule)
 * blockchain (https://code.google.com/p/blockchain/, with various changes)
+
+## Donations
+
+Donation appreciated, to support development and server costs
+
+* BTC: 1LLqMFskaSaZ3w2LuH6dbQaULcy1Bu1b2R
+* PPC: PEiZ7r4KR85izAhfzQKJgJxdQkQ6PPXXEX
+* LTC: LXzHvrRMQVEHj6gvK4rsZ7HGopgqfxS7PS
