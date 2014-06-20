@@ -564,14 +564,20 @@ void CacherServer::getblock(const Hash256& hash, Json::Value& response)
 		}
 
 		response["coinage_destroyed"] = dbBlock.coinAgeDestroyed / 86400.0;
-		response["avg_coinage"] = dbBlock.totalCoinAge / dbBlock.totalCoins / 86400.0;
+		if(dbBlock.totalCoins > 0)
+			response["avg_coinage"] = dbBlock.totalCoinAge / dbBlock.totalCoins / 86400.0;
+		else
+			response["avg_coinage"] = 0;
 
 		if (blockInfo.type == BlockType::ProofOfStake)
 		{
 			response["type"] = "pos";
 			response["stake_amount"] = (double)blockInfo.staked;
 			response["stake_coinage_destroyed"] = blockInfo.stakeCoinAgeDestroyed / 86400.0;
-			response["stake_age"] = blockInfo.stakeCoinAgeDestroyed / 86400.0 / blockInfo.staked;
+			if(blockInfo.staked > 0)
+				response["stake_age"] = blockInfo.stakeCoinAgeDestroyed / 86400.0 / blockInfo.staked;
+			else
+				response["stake_age"] = 0;
 		}
 		else
 		{
