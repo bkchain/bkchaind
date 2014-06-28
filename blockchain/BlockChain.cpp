@@ -1778,7 +1778,6 @@ BlockChainConfig configs[] =
 {
 	{ "BTC", "Bitcoin", 8332, 0, 5, 0xD9B4BEF9, 100000000 },
 	{ "BTCT", "Bitcoin Testnet", 18332, 111, 196, 0x0709110B, 100000000 },
-	{ "LTC", "Litecoin", 9332, 48, 5, 0xdbb6c0fb, 100000000 },
 	{ "LTCT", "Litecoin Testnet", 19332, 111, 196, 0xdcb7c1fc, 100000000 },
 	{ "PPC", "PeerCoin", 9902, 55, 117, 0xE5E9E8E6, 1000000, true },
 	{ "PPCT", "PeerCoin Testnet", 9904, 111, 196, 0xEFC0F2CB, 1000000, true },
