@@ -1784,6 +1784,8 @@ BlockChainConfig configs[] =
 	{ "PPCT", "PeerCoin Testnet", 9904, 111, 196, 0xEFC0F2CB, 1000000, true },
 	{ "DOGE", "Dogecoin", 22555, 30, 22, 0xC0C0C0C0, 100000000 },
     	{ "VTC", "Vertcoin", 5889, 71, 5, 0xDAB5BFFA, 100000000 },
+    	{ "TCO", "Tacocoin", 21042, 71, 5, 0xdbb6c0fb, 100000000 },
+
 };
 
 // This is the implementation of the BlockChain parser interface
