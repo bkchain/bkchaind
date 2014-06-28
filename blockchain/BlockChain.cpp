@@ -1778,12 +1778,13 @@ BlockChainConfig configs[] =
 {
 	{ "BTC", "Bitcoin", 8332, 0, 5, 0xD9B4BEF9, 100000000 },
 	{ "BTCT", "Bitcoin Testnet", 18332, 111, 196, 0x0709110B, 100000000 },
-	{ "LTC", "Litecoin", 9332, 48, 5, 0xdbb6c0fb, 100000000 },
 	{ "LTCT", "Litecoin Testnet", 19332, 111, 196, 0xdcb7c1fc, 100000000 },
 	{ "PPC", "PeerCoin", 9902, 55, 117, 0xE5E9E8E6, 1000000, true },
 	{ "PPCT", "PeerCoin Testnet", 9904, 111, 196, 0xEFC0F2CB, 1000000, true },
 	{ "DOGE", "Dogecoin", 22555, 30, 22, 0xC0C0C0C0, 100000000 },
     	{ "VTC", "Vertcoin", 5889, 71, 5, 0xDAB5BFFA, 100000000 },
+    	{ "TCO", "Tacocoin", 21042, 71, 5, 0xdbb6c0fb, 100000000 },
+
 };
 
 // This is the implementation of the BlockChain parser interface
